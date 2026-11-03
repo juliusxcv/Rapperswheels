@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rapperswheels</title>
+  <meta name="description" content="Rapperswheels – Freestyle Verein Rapperswil-Jona. Fotos, Statuten, Kontakt und Mitgliedschaft.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a href="#home" class="nav-brand">RW</a>
+    <ul>
+      <li><a href="#home"><span>01</span>Home</a></li>
+      <li><a href="#fotos"><span>02</span>Fotos</a></li>
+      <li><a href="#statuten"><span>03</span>Statuten</a></li>
+      <li><a href="#kontakt"><span>04</span>Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Fixed above everything: centred on the poster, docks to the top centre once you scroll past it -->
+  <h1 class="logo">
+    <a href="#home" tabindex="-1"><img src="assets/logo.png" alt="Rapperswheels" width="1769" height="384"></a>
+  </h1>
+
+  <!-- 01 Home -->
+  <header id="home" class="poster">
+    <div class="poster-sticky">
+      <img class="backing" src="assets/poster/00-black-backing.jpg" alt="" aria-hidden="true">
+      <!-- Torn poster layers, back to front; all share one canvas so they stay registered -->
+      <div class="poster-stage" aria-hidden="true">
+        <img class="layer" src="assets/poster/01-green-paper.png" alt="" data-layer="green">
+        <img class="layer" src="assets/poster/02-upper-gray-paper.png" alt="" data-layer="upper">
+        <img class="layer" src="assets/poster/03-lower-gray-paper.png" alt="" data-layer="lower">
+      </div>
+      <p class="intro">
+        Rapperswheels ist ein lokaler Verein aus Rapperswil-Jona, der Freestyle-Sport am Leben hält —
+        Skateboard, BMX, Scooter, Inline und alles dazwischen. Wir organisieren Sessions, Workshops und
+        Events, setzen uns für sichere und zugängliche Spots in der Region ein und fördern den Nachwuchs.
+        Offen für alle, die rollen wollen.
+      </p>
+      <p class="hero-meta hero-meta--left">Freestyle Verein<br>Rapperswil-Jona</p>
+      <a href="#fotos" class="hero-scroll" aria-label="Weiter zu den Fotos">↓</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 02 Fotos -->
+    <section id="fotos" class="photowall">
+      <div class="section-head">
+        <span class="section-no">02</span>
+        <h2>Fotowand</h2>
+        <span class="section-count" id="media-count"></span>
+      </div>
+      <div class="wall" id="wall" aria-label="Fotos und Clips"></div>
+      <p class="hero-meta hero-meta--right">Ziehen &amp; werfen<br>Klick zum Vergrössern</p>
+    </section>
+
+    <!-- 03 Statuten -->
+    <section id="statuten" class="section">
+      <div class="section-head">
+        <span class="section-no">03</span>
+        <h2>Statuten</h2>
+      </div>
+
+      <div class="statutes">
+        <p class="lead">«Rapperswheels» Freestyle Verein Rapperswil-Jona — Verein im Sinne von Art. 60 ff. ZGB.</p>
+
+        <details open>
+          <summary><span>Art. 1</span>Name</summary>
+          <p>Unter dem Namen «Rapperswheels» besteht ein Verein im Sinne von Art. 60 ff. ZGB.</p>
+        </details>
+        <details>
+          <summary><span>Art. 2</span>Sitz</summary>
+          <p>Der Verein hat seinen Sitz in Rapperswil-Jona, Kanton St. Gallen.</p>
+        </details>
+        <details>
+          <summary><span>Art. 3</span>Vereinszweck</summary>
+          <p>Der Verein fördert Freestyle-Sportarten und die dazugehörige Kultur, Gemeinschaft und kreative Bewegung. Der Verein verfolgt insbesondere folgende Ziele:</p>
+          <ul>
+            <li>Förderung von Freestyle-Sportarten wie Skateboarding, BMX, Scooter, Inline, oder verwandten Disziplinen</li>
+            <li>Zusammenarbeit mit Gemeinden, Organisationen und anderen Vereinen</li>
+            <li>Organisation von Trainings, Sessions, Workshops, Events und Wettbewerben</li>
+            <li>Förderung des Austauschs und der Gemeinschaft unter den Mitgliedern</li>
+            <li>Unterstützung von Jugendlichen und Nachwuchsförderung</li>
+            <li>Förderung von sicheren und zugänglichen Freestyle-Infrastrukturen in der Region</li>
+          </ul>
+          <p>Der Verein ist politisch und konfessionell neutral und verfolgt keine kommerziellen Zwecke. Die Organe sind ehrenamtlich tätig.</p>
+        </details>
+        <details>
+          <summary><span>Art. 4</span>Mittel</summary>
+          <p>Zur Verfolgung des Vereinszweckes verfügt der Verein über folgende Mittel:</p>
+          <ul>
+            <li>Mitgliederbeiträge</li>
+            <li>Gönnerbeiträge</li>
+            <li>Erträge aus eigenen Veranstaltungen</li>
+            <li>Subventionen</li>
+            <li>Erträge aus Leistungsvereinbarungen</li>
+            <li>Spenden und Zuwendungen aller Art</li>
+          </ul>
+          <p>Die Mitgliederbeiträge werden jährlich durch die Mitgliederversammlung festgesetzt. Aktivmitglieder bezahlen einen höheren Beitrag als Passivmitglieder. Der Beitrag kann in Ausnahmefällen durch einen Vorstandsentscheid erlassen werden.</p>
+          <p>Das Geschäftsjahr entspricht dem Kalenderjahr.</p>
+        </details>
+        <details>
+          <summary><span>Art. 5</span>Mitglieder</summary>
+          <p>Mitglieder des Vereins können natürliche und juristische Personen werden, welche den Vereinszweck unterstützen.</p>
+          <p>Der Verein kennt folgende Mitgliederkategorien:</p>
+          <ul>
+            <li>Aktivmitglieder</li>
+            <li>Passivmitglieder</li>
+            <li>Ehrenmitglieder</li>
+          </ul>
+          <p>Mitglieder können natürliche und juristische Personen werden, denen der Vereinszweck ein Anliegen ist.</p>
+          <p>Aktivmitglieder mit Stimmrecht sind natürliche Personen und juristische Personen, welche die Angebote und Einrichtungen des Vereins nutzen.</p>
+          <p>Passivmitglieder haben kein Stimmrecht. Es können natürliche oder juristische Personen sein, welche den Verein ideell und finanziell unterstützen.</p>
+          <p>Der Eintritt in den Verein kann jederzeit erfolgen. Für das angebrochene Jahr ist der volle Mitgliederbeitrag zu bezahlen. Aufnahmegesuche sind an den Vorstand zu richten; über die Aufnahme entscheidet der Vorstand endgültig.</p>
+        </details>
+        <details>
+          <summary><span>Art. 6</span>Aufnahme, Austritt &amp; Ausschluss</summary>
+          <p>Ein Vereinsaustritt ist jederzeit mit Meldung an den Vorstand möglich. Für das angebrochene Jahr ist der volle Mitgliederbeitrag zu bezahlen.</p>
+          <p>Ein Mitglied kann jederzeit wegen Verletzung der Statuten oder Verstösse gegen die Ziele des Vereins aus dem Verein ausgeschlossen werden. Der Vorstand fällt den Ausschlussentscheid; das Mitglied kann gegen den Ausschlussentscheid innert 30 Tagen an die nächste Mitgliederversammlung rekurrieren. Bis zum endgültigen Entscheid ruhen die Mitgliederrechte.</p>
+          <p>Mitglieder, die gegen die Interessen oder Ziele des Vereins handeln oder dem Verein schaden, können durch den Vorstand ausgeschlossen werden.</p>
+        </details>
+        <details>
+          <summary><span>Art. 7</span>Organe des Vereins</summary>
+          <p>Die Organe des Vereins sind:</p>
+          <ul>
+            <li>die Generalversammlung</li>
+            <li>der Vorstand</li>
+            <li>die Revisionsstelle (optional)</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Art. 8</span>Ordentliche Generalversammlung</summary>
+          <p>Das oberste Organ des Vereins ist die Mitgliederversammlung. Eine ordentliche Mitgliederversammlung findet jährlich statt.</p>
+          <p>Der Vorstand kann in Ausnahmefällen die Beschlussfassung mittels elektronischer Abstimmungsplattform oder auf schriftlichem Weg erlauben. Bei einer alternativen Durchführung sind die gleichen statuarischen Bestimmungen einzuhalten wie bei einer physischen Versammlung: Einladungsfrist, nötige Mehrheiten. Für die Berechnung der Mehrheiten gilt die Zahl der Mitglieder, die sich an der Abstimmung/Wahl beteiligen.</p>
+          <p>Zur Mitgliederversammlung werden die Mitglieder mind. 10 Tage im Voraus schriftlich unter Angabe der Traktanden eingeladen. Einladungen per E-Mail sind gültig.</p>
+          <p>Anträge von Mitgliedern für zusätzliche Geschäfte zuhanden der Mitgliederversammlung sind bis spätestens 5 Tage vor der Mitgliederversammlung schriftlich und begründet dem Vorstand einzureichen. Anträge per E-Mail sind gültig.</p>
+          <p>Der Vorstand oder 1/5 der Mitglieder können jederzeit die Einberufung einer ausserordentlichen Mitgliederversammlung unter Angaben des Zwecks verlangen. Die Versammlung hat spätestens vier Wochen nach Eingang des Begehrens zu erfolgen.</p>
+        </details>
+        <details>
+          <summary><span>Art. 9</span>Aufgaben und Kompetenzen der Generalversammlung</summary>
+          <p>Die Mitgliederversammlung hat die folgenden unentziehbaren Aufgaben und Kompetenzen:</p>
+          <ol>
+            <li>Genehmigung des Protokolls der letzten Mitgliederversammlung</li>
+            <li>Genehmigung des Jahresberichts des Vorstands</li>
+            <li>Entgegennahme des Revisionsberichts und Genehmigung der Jahresrechnung</li>
+            <li>Entlastung des Vorstandes</li>
+            <li>Wahl der Vorstandsmitglieder sowie der Revisionsstelle</li>
+            <li>Festsetzung der Mitgliederbeiträge</li>
+            <li>Genehmigung des Jahresbudgets</li>
+            <li>Beschlussfassung über das Tätigkeitsprogramm</li>
+            <li>Beschlussfassung über Anträge des Vorstands und der Mitglieder</li>
+            <li>Änderung der Statuten</li>
+            <li>Entscheid über Ausschlussrekurse</li>
+            <li>Beschlussfassung über die Auflösung des Vereins und die Verwendung des Liquidationserlöses</li>
+          </ol>
+          <p>Jede ordnungsgemäss einberufene Mitgliederversammlung ist unabhängig von der Anzahl der anwesenden Mitglieder beschlussfähig.</p>
+          <p>Die Mitglieder fassen die Beschlüsse mit dem einfachen Mehr der abgegebenen Stimmen (Enthaltungen zählen nicht).</p>
+          <p>Statutenänderungen benötigen das absolute Mehr (eine Stimme mehr als die Hälfte aller gültigen Stimmen).</p>
+          <p>Ein Vereinsmitglied kann sich in der Mitgliederversammlung mit schriftlicher Vollmacht von einem anderen Vereinsmitglied vertreten lassen. Jedes Vereinsmitglied kann höchstens ein Mitglied vertreten. Eine Vollmacht per E-Mail ist gültig.</p>
+          <p>Über die gefassten Beschlüsse ist zumindest ein Beschlussprotokoll abzufassen.</p>
+        </details>
+        <details>
+          <summary><span>Art. 10</span>Zusammensetzung</summary>
+          <p>Der Vorstand besteht aus mindestens drei Personen.</p>
+          <p>Die Amtszeit beträgt ein Jahr. Die Wiederwahl ist zulässig.</p>
+          <p>Der Vorstand führt die laufenden Geschäfte und vertritt den Verein nach aussen.</p>
+          <p>Mögliche Funktionen sind:</p>
+          <ul>
+            <li>Präsidium</li>
+            <li>Vizepräsidium</li>
+            <li>Kassier:in</li>
+            <li>Aktuar:in</li>
+            <li>Beisitz</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Art. 11</span>Aufgaben des Vorstands</summary>
+          <p>Der Vorstand führt die laufenden Geschäfte des Vereins. Er erlässt Reglemente. Er kann Arbeitsgruppen (Fachgruppen) einsetzen. Er kann für die Erreichung der Vereinsziele Personen gegen eine angemessene Entschädigung anstellen (nach Arbeitsrecht) oder beauftragen.</p>
+          <p>Der Vorstand verfügt über alle Kompetenzen, die nicht von Gesetzes wegen oder gemäss diesen Statuten einem anderen Organ übertragen sind.</p>
+          <p>Der Vorstand konstituiert sich selber. Der Vorstand versammelt sich, sooft es die Geschäfte verlangen. Jedes Vorstandsmitglied kann unter Angabe der Gründe die Einberufung einer Sitzung verlangen.</p>
+          <p>Sofern kein Vorstandsmitglied mündliche Beratung verlangt, ist die Beschlussfassung auf dem Zirkularweg (auch E-Mail) gültig.</p>
+          <p>Der Vorstand ist grundsätzlich ehrenamtlich und unentgeltlich tätig, er hat Anrecht auf Vergütung der effektiven Spesen. Für besondere Leistungen einzelner Vorstandsmitglieder kann eine angemessene Entschädigung ausgerichtet werden.</p>
+          <p>Er vertritt den Verein nach aussen und ist zuständig für:</p>
+          <ul>
+            <li>Umsetzung der Vereinsziele</li>
+            <li>Organisation von Aktivitäten und Veranstaltungen</li>
+            <li>Verwaltung der Finanzen</li>
+            <li>Aufnahme und Ausschluss von Mitgliedern</li>
+            <li>Kommunikation mit Behörden, Sponsoren und Partnern</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Art. 12</span>Zeichnungsberechtigung</summary>
+          <p>Der Vorstand regelt die Zeichnungsberechtigung kollektiv zu zweien.</p>
+        </details>
+        <details>
+          <summary><span>Art. 13</span>Haftung</summary>
+          <p>Für die Verbindlichkeiten des Vereins haftet ausschliesslich das Vereinsvermögen. Eine persönliche Haftung der Mitglieder ist ausgeschlossen.</p>
+        </details>
+        <details>
+          <summary><span>Art. 14</span>Vereinsjahr</summary>
+          <p>Das Vereinsjahr entspricht dem Kalenderjahr.</p>
+        </details>
+        <details>
+          <summary><span>Art. 15</span>Infrastruktur</summary>
+          <p>Der Verein betreibt aktuell kein eigenes Lokal.</p>
+          <p>Für Trainings, Treffen und Veranstaltungen können öffentliche oder private Anlagen sowie temporäre Räumlichkeiten genutzt werden.</p>
+          <p>Der Vorstand regelt die Nutzung und Zusammenarbeit mit Eigentümer:innen, Gemeinden oder Partnerorganisationen.</p>
+        </details>
+        <details>
+          <summary><span>Art. 16</span>Datenschutz</summary>
+          <p>Der Verein erhebt von den Mitgliedern ausschliesslich diejenigen Personendaten, die zur Erfüllung des Vereinszwecks notwendig sind. Der Vorstand sorgt für eine dem Risiko angemessene Sicherheit der Daten.</p>
+          <p>Die Mitgliederdaten, namentlich der Name und E-Mail-Adresse können sämtlichen Vereinsmitgliedern bekanntgegeben werden. Die Bearbeitung der Mitgliederdaten erfolgt im Übrigen nach den Bestimmungen der schweizerischen Datenschutzgesetzgebung.</p>
+        </details>
+        <details>
+          <summary><span>Art. 17</span>Auflösung des Vereins</summary>
+          <p>Die Auflösung des Vereins kann nur durch eine Generalversammlung mit Zweidrittelmehrheit beschlossen werden.</p>
+          <p>Im Falle einer Auflösung fällt ein allfälliges Vereinsvermögen an eine Organisation oder einen Verein mit ähnlichem Zweck in der Region.</p>
+        </details>
+        <details>
+          <summary><span>Art. 18</span>Inkrafttreten</summary>
+          <p>Diese Statuten wurden an der Gründungsversammlung vom 18.05.2026 angenommen und treten sofort in Kraft.</p>
+        </details>
+
+        <dl class="signatures">
+          <dt>Ort, Datum</dt>
+          <dd>Rapperswil, 18.05.2026</dd>
+          <dt>Präsident</dt>
+          <dd>Andri Beer</dd>
+          <dt>Vizepräsident</dt>
+          <dd>Julius Vollenweider</dd>
+          <dt>Kassier</dt>
+          <dd>Joël Vettiger</dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 04 Kontakt -->
+    <section id="kontakt" class="section">
+      <div class="section-head">
+        <span class="section-no">04</span>
+        <h2>Kontakt</h2>
+      </div>
+
+      <div class="contact">
+        <div class="contact-info">
+          <p class="lead">Fragen, Ideen, Sessions — oder Lust, Teil vom Verein zu werden? Schreib uns.</p>
+          <dl>
+            <dt>Mail</dt>
+            <dd><a href="mailto:info@rapperswheels.ch" id="contact-mail">info@rapperswheels.ch</a></dd>
+            <dt>Instagram</dt>
+            <dd><a href="https://instagram.com/rapperswheels" target="_blank" rel="noopener">@rapperswheels</a></dd>
+            <dt>Spot</dt>
+            <dd>Skatepark<br>Rapperswil-Jona</dd>
+          </dl>
+        </div>
+
+        <form class="form" id="contact-form" novalidate>
+          <fieldset class="toggle" role="radiogroup" aria-label="Anliegen">
+            <label><input type="radio" name="mode" value="message" checked><span>Nachricht</span></label>
+            <label><input type="radio" name="mode" value="member"><span>Mitglied werden</span></label>
+          </fieldset>
+
+          <div class="row">
+            <label class="field"><span>Vorname</span><input name="firstname" autocomplete="given-name" required></label>
+            <label class="field"><span>Nachname</span><input name="lastname" autocomplete="family-name" required></label>
+          </div>
+          <label class="field"><span>E-Mail</span><input type="email" name="email" autocomplete="email" required></label>
+
+          <div class="member-only" hidden>
+            <div class="row">
+              <label class="field"><span>Geburtsdatum</span><input type="date" name="birthdate"></label>
+              <label class="field"><span>Telefon</span><input type="tel" name="phone" autocomplete="tel"></label>
+            </div>
+            <label class="field"><span>Adresse</span><input name="address" autocomplete="street-address"></label>
+            <label class="field"><span>PLZ / Ort</span><input name="city" autocomplete="address-level2"></label>
+            <fieldset class="field choice">
+              <span>Mitgliedschaft</span>
+              <div>
+                <label><input type="radio" name="membership" value="Aktiv" checked> Aktiv</label>
+                <label><input type="radio" name="membership" value="Passiv"> Passiv</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <label class="field"><span id="message-label">Nachricht</span><textarea name="message" rows="5"></textarea></label>
+
+          <label class="check member-only" hidden>
+            <input type="checkbox" name="statutes">
+            <span>Ich habe die <a href="#statuten">Statuten</a> gelesen und akzeptiere sie.</span>
+          </label>
+
+          <div class="form-foot">
+            <button type="submit" class="btn" id="submit-btn">Senden →</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Rapperswheels</span>
+    <a href="#home">↑ Top</a>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Medienansicht">
+    <div class="lb-backdrop"></div>
+    <div class="lb-stage" id="lb-stage"></div>
+    <button class="lb-btn lb-close" aria-label="Schliessen">✕</button>
+    <button class="lb-btn lb-prev" aria-label="Vorheriges">←</button>
+    <button class="lb-btn lb-next" aria-label="Nächstes">→</button>
+    <span class="lb-index" id="lb-index"></span>
+  </div>
+
+  <script src="media.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
