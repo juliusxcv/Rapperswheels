@@ -90,6 +90,11 @@ button { font: inherit; color: inherit; }
   aspect-ratio: 1672 / 941;
   translate: 0 -50%;
 }
+/* Portrait: the green strip (≈ 11.6% into the poster) would fill the left half and
+   run under the logo, so slide the poster left until only its edge peeks in */
+@media (max-aspect-ratio: 4/5) {
+  .poster-stage { left: calc(2vw - 22vh); }
+}
 .poster-stage .layer {
   position: absolute;
   inset: 0;
